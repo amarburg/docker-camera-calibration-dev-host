@@ -1,0 +1,16 @@
+## Set Docker password as secret "docker_password"
+pipeline:
+  docker:
+    image: plugins/docker
+    username: amarburg
+    repo: amarburg/camera-calibration-dev-host
+    tags:
+      - latest
+
+  slack:
+    image: plugins/slack
+    secrets: [ slack_webhook ]
+    when:
+      status:
+        - success
+        - failure

@@ -1,6 +1,6 @@
 
 
-IMAGE=amarburg/lsdslam-dev-host:latest
+IMAGE=amarburg/camera-calibration-dev-host:latest
 
 all: build push
 
