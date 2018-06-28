@@ -2,8 +2,8 @@
 pipeline:
   docker:
     image: plugins/docker
-    username: amarburg
     repo: amarburg/camera-calibration-dev-host
+    secrets: [ docker_username, docker_password ]
     tags:
       - latest
 
