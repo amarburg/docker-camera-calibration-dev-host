@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 ENV BUILDDEPS="g++ git cmake ca-certificates \
             libopencv-dev libboost-all-dev \
-            libeigen3-dev libtclap-dev libgsl-dev libceres-dev
+            libeigen3-dev libtclap-dev libgsl-dev libceres-dev \
             libkyotocabinet-dev"
 
 ENV DEBIAN_FRONTEND=noninteractive
